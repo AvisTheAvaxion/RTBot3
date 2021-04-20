@@ -1,22 +1,22 @@
 global rtlogo
-rtlogo = "https://media.discordapp.net/attachments/831179512129519657/831982397938860052/Red_Tech_Logo_PNG.PNG?width=831&height=402"
+rtlogo = "https://media.discordapp.net/attachments/831179512129519657/831982397938860052/Red_Tech_Logo_PNG.PNG?width=831&height=402" #link to the Red Tech logo
 global joinMessageChannel
 global botLoggingChannel
-rtServer = 775914661463326730
-joinMessageChannel = 832411023397879818
-logMessageChannel = 832405426128814120
-rulesChannel = "<#827592943853502526>"
-muteRoleId = 833546378953097246
-memberRoleId = 831225101839106058
+rtServer = 775914661463326730 #Red Tech Server Id
+joinMessageChannel = 832411023397879818 #Join Message Channel
+logMessageChannel = 832405426128814120 #Log Message Channel
+rulesChannel = "<#827592943853502526>" #Rules channel
+muteRoleId = 833546378953097246 #muted role
+memberRoleId = 831225101839106058 #member role
 
-def test():
+def test(): #test (sends "There is nothing to test right now when called")
   
   return "There is nothing to test right now"
 
 
 
 
-def help():
+def help(): #help (makes an embed with all of the commands and descriptions of them)
   import discord
   
   embed = discord.Embed(title= "Help", description= "You asked for help", colour= discord.colour.Colour.red())
@@ -44,7 +44,7 @@ def help():
 
 
 
-async def getUser(ctx, client, command):
+async def getUser(ctx, client, command): #get user, gets a user from a mention, message or id
   import discord
   try:
     user = ctx.message.mentions[0]
@@ -80,7 +80,7 @@ async def getUser(ctx, client, command):
 
 
 
-def blackBox():
+def blackBox(): #black box (makes an embed with the back box data)
   import discord
   embed = discord.Embed(title= "Red Tech Black Box Data", description= "", colour= discord.colour.Colour.dark_purple())
 
@@ -96,7 +96,7 @@ def blackBox():
 
 
 
-def history():
+def history(): #history (makes 2 embeds with the history of red tech)
   import discord
 
   embed = discord.Embed(title= "The History Of Red Tech", description= "Red_Tech was created by Jon_Jon_TTV.  It has been confirmed that there was another server in which Jon was working with redstone before Jon came to Digital Jesuit, but the reason for the sudden switch of servers is still unknown to this day.  Initially planning to make a small town for him and his friends, Jon spent a brief period in Snowdin, using that time to gather materials and scout a site for his town.  After a week or so, Jon went to a snowy tundra right outside of Snowdin and established his town.  After a few weeks in the server, it had become clear to Jon that this server lacked widespread knowledge about redstone and other technologies.  Therefore, he made a company called Red_Tech, short for Redstone Technologies.  Things went along smoothly for quite some time, eventually expanding to about 52 chunks.  A month after starting construction, the company opened for orders from other server members.  However, this order service closed shortly after due to the overwhelming amount of orders placed and the general lack of staff, plus the difficulty of actually installing said orders. Red_Tech therefore became a research facility, planning to do big reveals about every 2 months of what they have been working on.  Despite this, Red_Tech staff will usually still give tours of the town upon request, although always avoiding a door labeled Staff Only.  It is unknown what lies behind this door.  Red_Tech has been called by many the \"Silicon Valley of Digital Jesuit\", and demand for a position as an engineer at the company is at an all time high.  Recently, Red_Tech has joined forces with Australis due to budget issues, the promise of a massive urban center, and of course because Jon hated the snow.  After a couple of days of closure to resolve the world edit issues, Red_Tech opened again.", colour= discord.colour.Color.red())
@@ -107,5 +107,5 @@ def history():
   return list1
 
 
-def bob():
+def bob(): #bob (this should be deleted)
   return "Bob is just a rumor. Go back to your business"
